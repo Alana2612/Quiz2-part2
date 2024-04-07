@@ -1,9 +1,8 @@
 type SearchFilterProps = {
   filterText: string;
   setFilterText: React.Dispatch<React.SetStateAction<string>>;
-  onSearch: () => void; // Asume que onSearch no toma ningún argumento y no retorna nada
+  onSearch: () => void;
 };
-
 const SearchFilter: React.FC<SearchFilterProps> = ({
   filterText,
   setFilterText,

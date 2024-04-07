@@ -20,9 +20,7 @@ const Index: React.FC = () => {
         "Estoy muy contento con mi compra. Las imágenes son hermosas y la entrega fue rápida.",
     },
   ];
-
   const [state, dispatch] = useReducer(cartReducer, initialState);
-
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(state.cart));
   }, [state.cart]);
@@ -44,7 +42,6 @@ const Index: React.FC = () => {
                 Explora nuestros catálogos
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
-                {/* catalogo pokemon */}
 
                 <div  className="flex bg-slate-900 p-3 rounded-2xl text-white min-w-80">
                   <div className="flex flex-col items-center space-y-4 grow">
@@ -67,8 +64,6 @@ const Index: React.FC = () => {
                     </div>
                   </div>
                 </div>
-
-                {/* catalogo naturaleza */}
                 <div className="flex bg-slate-900 p-3 rounded-2xl min-w-80 text-white">
                   <div className="flex flex-col items-center grow space-y-4">
                     <h3 className="text-2xl font-bold text-center">
@@ -93,11 +88,9 @@ const Index: React.FC = () => {
               </div>
             </div>
           </section>
-
           <section className="container mx-auto mt-8">
             <h2 className="text-3xl font-bold mb-4">¿Quiénes Somos?</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {/* Carta 1 */}
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <h3 className="text-xl font-bold mb-2">Misión</h3>
                 <p className="text-gray-700">
@@ -105,8 +98,6 @@ const Index: React.FC = () => {
                   imágenes artísticas, inspirando y enriqueciendo sus vidas.
                 </p>
               </div>
-
-              {/* Carta 2 */}
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <h3 className="text-xl font-bold mb-2">Visión</h3>
                 <p className="text-gray-700">
@@ -115,8 +106,6 @@ const Index: React.FC = () => {
                   única y satisfactoria.
                 </p>
               </div>
-
-              {/* Carta 3 */}
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <h3 className="text-xl font-bold mb-2">Valores</h3>
                 <ul className="list-disc list-inside text-gray-700">

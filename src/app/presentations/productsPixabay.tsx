@@ -18,7 +18,6 @@ function ProductsPixabay() {
   const isFirstRun = useRef(true);
   const [filterText, setFilterText] = useState("");
 
-
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(state.cart));
   }, [state.cart]);
@@ -45,7 +44,6 @@ function ProductsPixabay() {
     setFilteredPixa(pixa);
     setTotalPages(Math.ceil(pixa.length / pageSize));
   }
-
 
   const handleSearch = async () => {
     const filtered = allPixa.filter((pixa) =>

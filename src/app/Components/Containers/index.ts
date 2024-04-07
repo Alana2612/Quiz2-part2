@@ -15,14 +15,12 @@ export type Pokemon = {
       front_default: string;
     };
   }
-
   export type CartItem = {
     id: number;
     type: "pokemon" | "pixabayImage";
     item: Pokemon | PixabayImage;
     quantity: number;
   };
-
   export type PixabayImage = {
     id: number;
     nombre: string;
@@ -35,6 +33,4 @@ export type Pokemon = {
     webformatURL: string;
     tags: string;
     user: string;
-    // Aquí puedes añadir más campos según necesites, basándote en la respuesta de la API de Pixabay.
   }
-  

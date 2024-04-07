@@ -84,7 +84,7 @@ export default function Header({ cart, dispatch }: HeaderProps) {
               <a href={"/gifProducts"}>Productos Naturaleza</a>
             </div>
             <div className="text-white ml-10 hover:underline">
-              <a href={"/products"}>Productos Pokemon</a>
+              <a href={"/Products"}>Productos Pokemon</a>
             </div>
             <div className="carrito relative ms-14">
               <img
