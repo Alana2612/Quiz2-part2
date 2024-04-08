@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Dispatch, useMemo } from "react";
 import type { CartItem } from "@/app/Components/Containers/index";
 import type { CartActions } from "@/app/Components/Reducers/cart-reducer";
-import FloatingScreen from "./FloatingScreen";
+import FloatingScreen from "@/app/presentations/FloatingScreen";
 
 type HeaderProps = {
   cart: CartItem[];

@@ -21,11 +21,6 @@ export default function Products({ pixa, dispatch }: PixaProps) {
                 alt="imagen"
               />
             </div>
-            <div className="col-8">
-              <h3 className="text-white text-lg md:text-xl lg:text-2xl font-bold text-shadow">
-                Name: Picture
-              </h3>
-            </div>
           </div>
         </div>
         <div className="bg-white p-4 rounded-b-lg">

@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState, useEffect, useReducer } from "react";
-import Product from "../presentations/products";
-import Header from "../presentations/header";
-import Footer from "../presentations/footer";
-import SearchFilter from "../presentations/SearchFilter";
+import Product from "@/app/presentations/products";
+import Header from "@/app/presentations/header";
+import Footer from "@/app/presentations/footer";
+import SearchFilter from "@/app/presentations/SearchFilter";
 import { cartReducer, initialState } from "@/app/Components/Reducers/cart-reducer";
 import { obtenerTodosLosPokemon } from "@/app/Components/Containers/Apis/pokeApi";
 import { Pokemon } from "@/app/Components/Containers/index";

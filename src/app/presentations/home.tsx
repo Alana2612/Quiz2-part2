@@ -1,9 +1,9 @@
 "use client";
-
-import Header from "./header";
-import Footer from "./footer";
-import { cartReducer, initialState } from "@/app/Components/Reducers/cart-reducer";
 import { useReducer, useEffect } from "react";
+import Header from "@/app/presentations/header";
+import Footer from "@/app/presentations/footer";
+import { cartReducer, initialState } from "@/app/Components/Reducers/cart-reducer";
+import GoToCard from "@/app/presentations/goToCard";
 
 const Index: React.FC = () => {
   const reviews = [
@@ -42,49 +42,20 @@ const Index: React.FC = () => {
                 Explora nuestros catálogos
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
-
-                <div  className="flex bg-slate-900 p-3 rounded-2xl text-white min-w-80">
-                  <div className="flex flex-col items-center space-y-4 grow">
-                    <h3 className="text-2xl font-bold  text-center">
-                      Catálogo Pokemon Retro
-                    </h3>
-                    <p className="text- font-bold  text-center">
-                      Descubre las mejores imágenes
-                      <br />
-                      de tus pokemon favoritos
-                    </p>
-                    <img
-                      className="rounded-lg img-shadow-effect"
-                      width="200"
-                      src="https://i.pinimg.com/736x/6d/df/99/6ddf9956300d5d16e8d933795cc888b2.jpg"
-                      alt="Pokemon image"
-                    />
-                    <div className="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded w-48">
-                      <a href={"/roducts"}>Ir al catálogo</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex bg-slate-900 p-3 rounded-2xl min-w-80 text-white">
-                  <div className="flex flex-col items-center grow space-y-4">
-                    <h3 className="text-2xl font-bold text-center">
-                      Catálogo Naturaleza
-                    </h3>
-                    <p className="text- font-bold  text-center">
-                      Descubre las mejores imágenes
-                      <br />
-                      sobre la naturaleza
-                    </p>
-                    <img
-                      className="rounded-lg img-shadow-effect"
-                      width="200"
-                      src="https://i.pinimg.com/236x/90/6d/de/906dde67660aaa0519b779ab17b9e5d1.jpg"
-                      alt="Nature image"
-                    />
-                    <div className="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded w-48">
-                      <a href={"/gifProducts"}>Ir al catálogo</a>
-                    </div>
-                  </div>
-                </div>
+                <GoToCard
+                title="Catálogo Pokemon Retro"
+                subtitle="de tus pokemon favoritos"
+                imgRute="https://i.pinimg.com/736x/6d/df/99/6ddf9956300d5d16e8d933795cc888b2.jpg"
+                imagAlt="Pokemon image"
+                redirect ="/Products"
+                ></GoToCard>
+                <GoToCard
+                title=" Catálogo Naturaleza"
+                subtitle="sobre la naturaleza"
+                imgRute="https://i.pinimg.com/236x/90/6d/de/906dde67660aaa0519b779ab17b9e5d1.jpg"
+                imagAlt="Nature image"
+                redirect ="/gifProducts"
+                ></GoToCard>
               </div>
             </div>
           </section>

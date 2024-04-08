@@ -1,9 +1,9 @@
 "use client";
-import SearchFilter from "../presentations/SearchFilter";
+import SearchFilter from "@/app/presentations/SearchFilter";
 import React, { useState, useEffect, useReducer, useRef } from "react";
-import Products from "../presentations/productsPi";
-import Header from "./header";
-import Footer from "./footer";
+import Products from "@/app/presentations/productsPi";
+import Header from "@/app/presentations/header";
+import Footer from "@/app/presentations/footer";
 import { cartReducer, initialState } from "@/app/Components/Reducers/cart-reducer";
 import { buscarImagenes } from "@/app/Components/Containers/Apis/pixabay";
 import { PixabayImage } from "@/app/Components/Containers/index";
