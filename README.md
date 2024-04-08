@@ -15,6 +15,6 @@ Moreover, I endeavored to ensure that the emporium transcended its role as a mer
 
 Reflecting upon this undertaking, I am reminded of the boundless possibilities that manifest when creativity intersects with technology. By bridging the chasm between Pokémon and nature imagery, I have forged a realm where imagination knows no bounds, and each click unveils a new odyssey.
 
-For those inclined to delve deeper, I have made the code repository accessible here. I extend an invitation to explore the intricacies of the codebase, unravel its inner workings, and perchance contribute to its evolution.
+For those inclined to delve deeper, I have made the code repository accessible here (https://github.com/Alana2612/Quiz2-part2.git). I extend an invitation to explore the intricacies of the codebase, unravel its inner workings, and perchance contribute to its evolution.
 
 In summation, the genesis of this Pokémon and Nature Image Store stands as a testament to the transformative potency of technology and creativity. As we continue to push the frontiers of innovation, let us recollect that the most extraordinary outcomes often emerge from the unlikeliest of pairings. Here's to the voyage of discovery and imagination that awaits.
